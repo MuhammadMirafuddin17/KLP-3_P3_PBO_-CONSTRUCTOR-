@@ -1,12 +1,10 @@
-package praktikum_p3;
-
 public class Mahasiswa {
     private String nama;
     private String nim;
 
-    public Mahasiswa() {
-        nama = "Muhammad Mirafuddin";
-        nim = "F1B021136";
+    public Mahasiswa(String nama, String nim) {
+        this.nama = nama;
+        this.nim = nim;
     }
 
     public void displayInfo() {
@@ -15,9 +13,9 @@ public class Mahasiswa {
     }
 
     public static void main(String[] args) {
-        Mahasiswa mahasiswa1 = new Mahasiswa();
+        Mahasiswa mahasiswa1 = new Mahasiswa("Muhammad Mirafuddin", "F1B021136");
 
-        System.out.println("Informasi Mahasiswa :");
+        System.out.println("Informasi Mahasiswa:");
         mahasiswa1.displayInfo();
     }
 }
