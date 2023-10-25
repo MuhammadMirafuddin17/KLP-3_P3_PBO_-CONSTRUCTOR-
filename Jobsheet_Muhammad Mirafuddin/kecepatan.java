@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class kecepatan {
+ int hitungKecepatan;
+
+ public kecepatan(int jarak,int waktu){
+ hitungKecepatan = jarak / waktu;
+ }
+ 
+ public int hitungKecepatan(){
+ return hitungKecepatan;
+ }
+
+ public static void main(String[] args){
+ try (Scanner input = new Scanner(System.in)) {
+    System.out.println("Jarak tempuh: ");
+     int jarak = input.nextInt();
+     System.out.println("Watu tempuh: ");
+     int waktu = input.nextInt();
+     kecepatan hasil = new kecepatan(jarak, 
+    waktu);
+     System.out.println("Kecepatan tempuh: " + 
+    hasil.hitungKecepatan());
+}
+ 
+ }
+}
